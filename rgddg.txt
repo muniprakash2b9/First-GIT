@@ -1,0 +1,77 @@
+
+git
+
+distributed version control,work on multiple files in parallel,
+
+mkdir netauto-  to create directory--folder
+
+cd netauto---will move to respective folder
+touch filename---creates empty file
+vi filenme---creates and opens into file
+
+
+cp s1 s2---copies s1 to s2(by creating it)
+
+git config --global user.name "muni"
+git config --global user.email "muni@gmail.com"
+
+
+git add filename --makes untracked files into tracked files----it will add file to staging area
+
+git commit - m "label name"---creates commit with whatever in staging area ..-m will pass short message with what changes
+
+git status---to check the status of files whether those were tracked and untracked . shows files ready for commit..how files stand in wroking tree and staging area
+
+git commit -m "label" filename----only mentioned file will commit
+
+git log--to get history of commits
+
+git diff--it shows diff b/n staging files and working area or tracked files to untracked file
+
+
+git add.
+git add *--to add all untracked files
+
+git diff --staged---shows diff b/n staging area and most recent commit
+
+git log -p-----changes happened in most recent commit
+
+git rm filename ---to remove file from staging and working tree
+
+git checkout -- filename ----to undo working tree change (it will fetch recently staged version of the file)
+
+git reset head filename--to undo staging area file (it will fetch most recent committed file from local directory)
+
+git log -- filename ---it will show commit log of that particular file
+
+git checkout hash code(5 digits) -- filename ----(it restore file from that particular commit to working area and staging)
+
+git reset --soft cid --- undo particular commit ...in staging area
+git reset -- mixed cid---same as above ..in working area
+.gitignore---for files not get tracked
+
+git branch ---shows all created branches
+
+git branch branchname ----will create branch with branch name
+ 
+head normally points master branch
+
+git log --all --decorate --oneline --graph ----will show commit graph
+
+alias graph="git log --all --decorate --oneline --graph" ---we can use graph for this command
+
+git commit -a -m "label" ----will add and commit all modified tracked files
+
+
+git diff master..AUTH---master and AUTH are two branches ..it will diff b/n them
+
+git branch -d AUTH---it will delete auth branch
+
+git checkout -b dev----dev branch will create and checkout will be done to dev
+
+
+
+ 
+
+
+
